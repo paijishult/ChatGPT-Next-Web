@@ -162,7 +162,7 @@ const cn = {
     },
 
     Update: {
-      Version: (x: string) => `当前版本：${x}`,
+      Version: (x: string) => `偏爱AI当前版本：${x}`,
       IsLatest: "已是最新版本",
       CheckUpdate: "检查更新",
       IsChecking: "正在检查更新...",
@@ -377,7 +377,8 @@ const cn = {
   },
   Store: {
     DefaultTopic: "新的聊天",
-    BotHello: "有什么可以帮你的吗",
+    BotHello: `你好呀！我是偏爱小助手！有什么可以帮你的吗?
+若使用时遇到任何问题，请前往社区私信管理员小吉，若模型返回异常请自行点击机器人图标切换AI模型使用。`,
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) => "这是历史聊天总结作为前情提要：" + content,
