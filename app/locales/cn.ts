@@ -8,11 +8,11 @@ const cn = {
   Error: {
     Unauthorized: isApp
       ? "检测到无效 API Key，请前往[设置](/#/settings)页检查 API Key 是否配置正确。"
-      : "访问密码不正确或为空，请前往[登录](/#/auth)页输入正确的访问密码，或者在[设置](/#/settings)页填入你自己的 OpenAI API Key。",
+      : "访问密码不正确或为空，请前往[登录](/#/auth)页输入正确的访问密码[点我获取密码](https://pc.paijishu.net/thread-23338-1-1.html)",
   },
   Auth: {
-    Title: "需要密码",
-    Tips: "管理员开启了密码验证，请在下方填入访问码",
+    Title: "防止盗刷需要验证密码",
+    Tips: "偏爱免费AI小助手开启了密码验证，请在下方填入访问码",
     SubTips: "或者输入你的 OpenAI 或 Google API 密钥",
     Input: "在此处填写访问码",
     Confirm: "确认",
@@ -166,7 +166,7 @@ const cn = {
     },
 
     Update: {
-      Version: (x: string) => `当前版本：${x}`,
+      Version: (x: string) => `偏爱AI当前版本：${x}`,
       IsLatest: "已是最新版本",
       CheckUpdate: "检查更新",
       IsChecking: "正在检查更新...",
@@ -434,7 +434,8 @@ const cn = {
   },
   Store: {
     DefaultTopic: "新的聊天",
-    BotHello: "有什么可以帮你的吗",
+    BotHello: `你好呀！我是偏爱小助手！本AI对偏爱用户完全免费使用！请问我有什么可以帮你的吗?
+若使用时遇到任何问题，请前往社区私信管理员小吉，若模型返回异常请自行点击机器人图标切换AI模型使用。`,
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) => "这是历史聊天总结作为前情提要：" + content,
