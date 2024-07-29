@@ -8,7 +8,7 @@ const cn = {
   Error: {
     Unauthorized: isApp
       ? "检测到无效 API Key，请前往[设置](/#/settings)页检查 API Key 是否配置正确。"
-      : "访问密码不正确或为空，请前往[登录](/#/auth)页输入正确的访问密码[点我获取密码](https://pc.paijishu.net/thread-23338-1-1.html)",
+      : "访问密码不正确或为空，请前往[登录](/#/auth)页输入正确的访问密码[点我获取密码](https://ec.paijishu.net/thread-23338-1-1.html)",
   },
   Auth: {
     Title: "防止盗刷需要验证密码",
@@ -435,7 +435,7 @@ const cn = {
   Store: {
     DefaultTopic: "新的聊天",
     BotHello: `你好呀！我是偏爱小助手！本AI对偏爱用户完全免费使用！请问我有什么可以帮你的吗?
-若使用时遇到任何问题，请前往社区私信管理员小吉，若模型返回异常请自行点击机器人图标切换AI模型使用。`,
+若使用时遇到任何问题，[请点我带上报错截图前往社区私信帅哥小吉](https://ec.paijishu.net/home.php?mod=space&uid=4641&do=profile)，若模型返回异常请自行点击机器人图标切换AI模型使用。`,
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) => "这是历史聊天总结作为前情提要：" + content,
