@@ -19,6 +19,10 @@ const cn = {
     Input: "在此处填写访问码",
     Confirm: "确认",
     Later: "稍后再说",
+    SaasTips: "配置太麻烦，想要立即使用",
+    TopTips:
+      "🥳 NextChat AI 首发优惠，立刻解锁 OpenAI o1, GPT-4o, Claude-3.5 等最新大模型",
+  },
   ChatItem: {
     ChatItemCount: (count: number) => `${count} 条对话`,
   },
@@ -189,7 +193,7 @@ const cn = {
     },
 
     Update: {
-      Version: (x: string) => `偏爱AI当前版本：${x}`,
+      Version: (x: string) => `当前版本：${x}`,
       IsLatest: "已是最新版本",
       CheckUpdate: "检查更新",
       IsChecking: "正在检查更新...",
@@ -297,6 +301,14 @@ const cn = {
       NoAccess: "输入 API Key 或访问密码查看余额",
     },
 
+    Access: {
+      SaasStart: {
+        Title: "使用 NextChat AI",
+        Label: "（性价比最高的方案）",
+        SubTitle:
+          "由 NextChat 官方维护, 零配置开箱即用，支持 OpenAI o1, GPT-4o, Claude-3.5 等最新大模型",
+        ChatNow: "立刻对话",
+      },
       AccessCode: {
         Title: "访问密码",
         SubTitle: "管理员已开启加密访问",
@@ -523,8 +535,7 @@ const cn = {
   },
   Store: {
     DefaultTopic: "新的聊天",
-    BotHello: `你好呀！我是偏爱小助手！本AI对偏爱用户完全免费使用！请问我有什么可以帮你的吗?
-[若使用偏爱AI时碰到问题，请点我带上报错截图前往社区私信帅哥小吉](https://www.paijishu.cn/home.php?mod=space&uid=4641&do=profile)`,
+    BotHello: "有什么可以帮你的吗",
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) => "这是历史聊天总结作为前情提要：" + content,
