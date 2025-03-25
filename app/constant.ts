@@ -550,7 +550,6 @@ const baiduModels = [
   "ernie-4.0-8k-preview",
   "ernie-4.0-8k-preview-0518",
   "ernie-4.0-8k-latest",
-  "ernie-3.5-8k",
   "ernie-3.5-8k-0205",
   "ernie-speed-128k",
   "ernie-speed-8k",
