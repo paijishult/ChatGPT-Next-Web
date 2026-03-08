@@ -14,7 +14,7 @@ English / [简体中文](./README_CN.md)
 
 [![Saas][Saas-image]][saas-url]
 [![Web][Web-image]][web-url]
-[![Windows][Windows-image]][download-url]
+[![Windows][Windows-image]][download-url]1
 [![MacOS][MacOS-image]][download-url]
 [![Linux][Linux-image]][download-url]
 
