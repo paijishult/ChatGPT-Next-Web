@@ -7,6 +7,7 @@ import type { Metadata, Viewport } from "next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
 import { getServerSideConfig } from "./config/server";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "偏爱AI助手",
@@ -48,6 +49,12 @@ export default function RootLayout({
           crossOrigin="use-credentials"
         ></link>
         <script src="/serviceWorkerRegister.js" defer></script>
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3313743118115832"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
       </head>
       <body>
         {children}
