@@ -627,7 +627,7 @@ const cn = {
   Store: {
     DefaultTopic: "新的聊天",
     BotHello: `🥳你好呀！我是偏爱小助手！本AI对偏爱用户完全免费使用！请问我有什么可以帮你的吗?
-[若使用偏爱AI时碰到问题，请点我带上报错截图前往社区私信帅哥小吉](https://www.paijishu.cn/home.php?mod=space&uid=4641&do=profile)`,
+[若使用偏爱AI时碰到问题，请点我带上报错截图发送邮件至claw0003@outlook.com](mailto:claw0003@outlook.com)`,
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) => "这是历史聊天总结作为前情提要：" + content,
