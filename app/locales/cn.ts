@@ -9,7 +9,7 @@ const cn = {
   Error: {
     Unauthorized: isApp
       ? "检测到无效 API Key，请前往[设置](/#/settings)页检查 API Key 是否配置正确。"
-      : "访问密码不正确或为空，请[🔑重新获取密码](https://mima.yueyued.top/)，本站AI永久免费使用禁止用作违法违规内容，请前往[输入访问密码](/#/auth)页输入正确的访问密码🔑[点我获取密码](https://mima.yueyued.top/)",
+      : "访问密码不正确或为空，请重新获取密码，本AI完全免费使用禁止用作违法违规内容或者倒卖，本AI完全免费，请前往[输入访问密码](/#/auth)页输入正确的访问密码🔑[点我获取密码](https://mima.yueyued.top/)",
   },
   Auth: {
     Return: "返回",
@@ -626,7 +626,7 @@ const cn = {
   },
   Store: {
     DefaultTopic: "新的聊天",
-    BotHello: `🥳你好呀！我是偏爱小助手！本AI完全免费使用！禁止用作任何违法违规用途，一切使用后果由使用者承担，请问我有什么可以帮你的吗?
+    BotHello: `🥳你好呀！我是偏爱小助手！本AI完全免费使用！禁止用作违法违规内容或者倒卖，本站完全免费，一切使用后果由使用者承担，请问我有什么可以帮你的吗?
 [若使用偏爱AI时碰到问题，请点我带上报错截图发送邮件至claw0003@outlook.com](mailto:claw0003@outlook.com)`,
     Error: "出错了，稍后重试吧",
     Prompt: {
