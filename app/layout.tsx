@@ -58,6 +58,13 @@ export default function RootLayout({
       </head>
       <body>
         {children}
+
+        {/* 公告脚本 */}
+        <Script
+          src="https://mima.yueyued.top/gonggao.js"
+          strategy="afterInteractive"
+        />
+
         {serverConfig?.isVercel && (
           <>
             <SpeedInsights />
