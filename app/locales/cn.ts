@@ -309,7 +309,7 @@ const cn = {
         Title: "偏爱AI",
         Label: "（免费）",
         SubTitle:
-          "由 偏爱技术 官方维护, 零配置开箱即用",
+          "由 偏爱 官方维护, 零配置开箱即用",
         ChatNow: "立刻对话",
       },
       AccessCode: {
@@ -626,7 +626,7 @@ const cn = {
   },
   Store: {
     DefaultTopic: "新的聊天",
-    BotHello: `🥳你好呀！我是偏爱小助手！本AI对偏爱用户完全免费使用！请问我有什么可以帮你的吗?
+    BotHello: `🥳你好呀！我是偏爱小助手！本AI完全免费使用！禁止用作任何违法违规用途，一切使用后果由使用者承担，请问我有什么可以帮你的吗?
 [若使用偏爱AI时碰到问题，请点我带上报错截图发送邮件至claw0003@outlook.com](mailto:claw0003@outlook.com)`,
     Error: "出错了，稍后重试吧",
     Prompt: {
