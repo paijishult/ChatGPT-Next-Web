@@ -40,29 +40,22 @@ const config = getClientConfig();
 
 export const DEFAULT_CONFIG = {
   lastUpdate: Date.now(), // timestamp, to merge state
-
   submitKey: SubmitKey.Enter,
   avatar: "1f603",
   fontSize: 14,
   fontFamily: "",
   theme: Theme.Auto as Theme,
-  tightBorder: !!config?.isApp,
+  tightBorder: false,
   sendPreviewBubble: true,
   enableAutoGenerateTitle: true,
   sidebarWidth: DEFAULT_SIDEBAR_WIDTH,
-
   enableArtifacts: true, // show artifacts config
-
   enableCodeFold: true, // code fold config
-
   disablePromptHint: false,
-
   dontShowMaskSplashScreen: false, // dont show splash screen when create chat
   hideBuiltinMasks: false, // dont add builtin masks
-
   customModels: "",
   models: DEFAULT_MODELS as any as LLMModel[],
-
   modelConfig: {
     model: "gpt-4o-mini" as ModelType,
     providerName: "OpenAI" as ServiceProvider,
@@ -82,7 +75,6 @@ export const DEFAULT_CONFIG = {
     quality: "standard" as DalleQuality,
     style: "vivid" as DalleStyle,
   },
-
   ttsConfig: {
     enable: false,
     autoplay: false,
@@ -91,7 +83,6 @@ export const DEFAULT_CONFIG = {
     voice: DEFAULT_TTS_VOICE,
     speed: 1.0,
   },
-
   realtimeConfig: {
     enable: false,
     provider: "OpenAI" as ServiceProvider,
@@ -107,7 +98,6 @@ export const DEFAULT_CONFIG = {
 };
 
 export type ChatConfig = typeof DEFAULT_CONFIG;
-
 export type ModelConfig = ChatConfig["modelConfig"];
 export type TTSConfig = ChatConfig["ttsConfig"];
 export type RealtimeConfig = ChatConfig["realtimeConfig"];
@@ -121,7 +111,6 @@ export function limitNumber(
   if (isNaN(x)) {
     return defaultValue;
   }
-
   return Math.min(max, Math.max(min, x));
 }
 
@@ -167,7 +156,6 @@ export const useAppConfig = createPersistStore(
     reset() {
       set(() => ({ ...DEFAULT_CONFIG }));
     },
-
     mergeModels(newModels: LLMModel[]) {
       if (!newModels || newModels.length === 0) {
         return;
@@ -190,17 +178,17 @@ export const useAppConfig = createPersistStore(
         models: Object.values(modelMap),
       }));
     },
-
     allModels() {},
   }),
   {
     name: StoreKey.Config,
     version: 4.1,
-
     merge(persistedState, currentState) {
       const state = persistedState as ChatConfig | undefined;
       if (!state) return { ...currentState };
+
       const models = currentState.models.slice();
+
       state.models.forEach((pModel) => {
         const idx = models.findIndex(
           (v) => v.name === pModel.name && v.provider === pModel.provider,
@@ -208,9 +196,9 @@ export const useAppConfig = createPersistStore(
         if (idx !== -1) models[idx] = pModel;
         else models.push(pModel);
       });
+
       return { ...currentState, ...state, models: models };
     },
-
     migrate(persistedState, version) {
       const state = persistedState as ChatConfig;
 
