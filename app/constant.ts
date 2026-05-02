@@ -488,12 +488,15 @@ export const VISION_MODEL_REGEXES = [
   /qwen2-vl/,
   /gpt-4-turbo(?!.*preview)/,
   /^dall-e-3$/,
+  /gpt-image-2/,
+  /codex-gpt-image-2/,
+  /grok-imagine-image-lite/,
   /glm-4v/,
   /vl/i,
   /o3/,
   /o4-mini/,
   /grok-4/i,
-  /gpt-5/
+  /gpt-5/,
 ];
 
 export const EXCLUDE_VISION_MODEL_REGEXES = [/claude-3-5-haiku-20241022/];
